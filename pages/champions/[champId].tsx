@@ -181,13 +181,16 @@ export default function Champion({ data }: any) {
                     >
                       {data.title}
                     </Title>
-                    <StyledText
-                      color="#c39031"
-                      style={{ fontFamily: "Friz-Regular" }}
-                      align="start"
-                    >
-                      Skills : {difficultyStars}
-                    </StyledText>
+                    {data.info.difficulty > 0 && (
+            <StyledText
+              color="#c39031"
+              style={{ fontFamily: "Friz-Regular" }}
+              align="start"
+            >
+              Skills : {difficultyStars}
+            </StyledText>
+          )}
+                    {data.info.attack > 0 && (
                     <StyledText
                       style={{ display: "flex", alignItems: "center" }}
                     >
@@ -198,6 +201,8 @@ export default function Champion({ data }: any) {
                         : {defenseStars}
                       </span>
                     </StyledText>
+                    )}
+                    {data.info.defense > 0 && (
                     <StyledText
                       style={{ display: "flex", alignItems: "center" }}
                     >
@@ -208,6 +213,8 @@ export default function Champion({ data }: any) {
                         : {attackStars}
                       </span>
                     </StyledText>
+                    )}
+                    {data.info.magic > 0 && (
                     <StyledText
                       style={{ display: "flex", alignItems: "center" }}
                     >
@@ -218,6 +225,7 @@ export default function Champion({ data }: any) {
                         : {magicStars}
                       </span>
                     </StyledText>
+                    )}
 
                     <Group position="center" spacing="xl">
                       <StyledGroup

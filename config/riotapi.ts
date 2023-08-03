@@ -1,10 +1,10 @@
 export const riotAPI =
-  "http://ddragon.leagueoflegends.com/cdn/12.20.1/data/fr_FR/champion.json";
+  "https://ddragon.leagueoflegends.com/cdn/13.15.1/data/fr_FR/champion.json";
 export const infoChampion =
-  "http://ddragon.leagueoflegends.com/cdn/12.21.1/data/fr_FR/champion/";
+  "http://ddragon.leagueoflegends.com/cdn/13.15.1/data/fr_FR/champion/";
 export const imageChampion =
   "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/";
 export const imageSkill =
-  "http://ddragon.leagueoflegends.com/cdn/11.14.1/img/spell/";
+  "http://ddragon.leagueoflegends.com/cdn/13.15.1/img/spell/";
 export const imagePassive =
-  "http://ddragon.leagueoflegends.com/cdn/11.14.1/img/passive/";
+  "http://ddragon.leagueoflegends.com/cdn/13.15.1/img/passive/";
