@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Badge, Group, Text } from "@mantine/core";
+import { Badge, Group, Text, Button } from "@mantine/core";
 import { motion } from "framer-motion";
 import styled from "@emotion/styled";
-import { StyledButton } from ".";
+
 
 function NotFound() {
   return (
@@ -25,7 +25,7 @@ function NotFound() {
         />
       </Group>
 
-      <StyledButton
+      <Button
         variant="gradient"
         gradient={{ from: "#84320b", to: "#d6951b", deg: 1 }}
         size="md"
@@ -33,7 +33,7 @@ function NotFound() {
         href="/champions"
       >
         Voltar
-      </StyledButton>
+      </Button>
     </StyledDiv>
   );
 }
